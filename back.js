@@ -9,7 +9,7 @@ for (let x of cart) {
 
     var selectedItem = document.createElement('div');
     selectedItem.classList.add('cartImg');
-    selectedItem.setAttribute('id', addItemId);
+    selectedItem.setAttribute('id', x.number);
 
 
     var img = document.createElement('img');
@@ -45,7 +45,7 @@ for (let x of cart) {
 var prix = 0
 
 function addToCart(item) {
-    addItemId += 1;
+    
 
     var selectedItem = document.createElement('div');
     selectedItem.classList.add('cartImg');
@@ -96,10 +96,11 @@ function addToCart(item) {
     old.push(object);
     localStorage.setItem("cart", JSON.stringify(old))
    
-
+    addItemId += 1;
 
 }
 function del(item) {
+    console.log(item)
     document.getElementById(item).remove()
     let cart = JSON.parse(localStorage.getItem("cart"))
     let tab = []

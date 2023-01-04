@@ -39,6 +39,10 @@ button:hover{
     border: 1px solid black;
     overflow-y:scroll;
     height: 100%; 
+    position: fixed;
+    top: 0;
+    right: 0;
+
 }
 .cartImg > img{
     width: 120px;
