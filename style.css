@@ -1,0 +1,52 @@
+.container{
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    /* transform: translate(-50%, 50%);
+    width: max-content; */
+}
+
+.card{
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    width: max-content;
+    margin: 10px;
+}
+.card img{
+    width: 250px;
+    padding: 2px;
+}
+.title{
+    font-weight: bold;
+    margin: 20px;
+}
+button{
+     border: 2px solid rgb(0, 0, 0);
+     background-color: rgb(4, 101, 19);
+     color: white;
+     font-weight: bold;
+     margin: 20px;
+     padding: 5px 10px;
+}
+button:hover{
+    box-shadow: 0 0 5px 5px cornflowerblue inset;
+}
+.cart{
+    width: 250px;
+    float: right;
+    text-align: center;
+    border: 1px solid black;
+    overflow-y:scroll;
+    height: 100%; 
+}
+.cartImg > img{
+    width: 120px;
+}
+.properties{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}

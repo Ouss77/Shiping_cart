@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="item1">
+            <img src="backpack.jpg">
+            <div class="title"> Backpack</div>
+            <div class="properties">
+                    <label> Size: </label>
+                    <select>
+                        <option>10</option>
+                        <option>20</option>
+                        <option>30</option>
+                        <option>40</option>
+                    </select>
+                <div id="prix1"> Prix: 100 Euro</div>
+            </div>
+
+            <button onclick="addToCart(item1)">Add To charset</button>
+        </div>
+        <div class="card" id="item2">
+            <img src="jacket.jpeg">
+            <div class="title"> Jacket</div>
+            <div class="properties">
+                <label> Size: </label>
+                <select>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                </select>
+                <div id="prix2"> Prix: 200 Euro</div>
+            </div>
+            
+            <button onclick="addToCart(item2)">Add To charset</button>
+        </div>
+        <div class="cart" id="cart">
+            <div class="title">CART</div>
+            <div id="title"></div>
+        </div>
+    </div>
+    <script src='back.js'></script>
+
+</body>
+
+</html>
